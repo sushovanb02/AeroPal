@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>AeroPal</title>
+  </head>
+  <body>
+    <h2>ENTER YOUR DETAILS!</h2>
+    <form action="">
+      <div class="detailsEntry">
+        <div class="airport-search">
+          <label for="airportSearch">Airport Search: </label>
+          <input
+            type="text"
+            id="airportSearch"
+            placeholder="Enter Airport ID, Name, City, State, and/or Country"
+          />
+        </div>
+        <div class="airline-search">
+          <label for="airlineSearch">Airline Search: </label>
+          <input
+            type="text"
+            id="airlineSearch"
+            placeholder="Enter Airline Company Name"
+          />
+        </div>
+        <div class="airline-ID">
+          <label for="airlineID">Airline ID: </label>
+          <input type="text" id="airlineID" placeholder="Enter Airline ID" />
+        </div>
+        <div class="date">
+          <label for="start">Date of Departure: </label>
+          <input
+            type="date"
+            id="start"
+            value="2021-08-09"
+            min="1997-01-01"
+            max="2030-12-31"
+          />
+        </div>
+    </div>
+      <a href="#/" class="btn-search">Search Route</a>
+    </form>
+  </body>
+</html>

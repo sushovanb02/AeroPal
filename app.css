@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: url("assets/background.jpg") no-repeat fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 32px;
+  margin: 0 0 24px;
+  margin-top: 40px;
+  color: #b10dc9;
+}
+.btn-search {
+  border: 2px solid blueviolet;
+  padding: 15px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 25px 0;
+  display: inline-block;
+  background-color: rgb(28, 206, 28);
+  border-radius: 8px;
+  transition: background-color 200ms ease-in-out;
+  box-sizing: border-box;
+  margin-left: 195px;
+}
+.btn-search:hover,
+.btn-search:focus {
+  background-color: #e7e2c7;
+}
+#airportSearch {
+  border: 2px solid rgb(241, 10, 10);
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 25px 0;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 200ms ease-in-out;
+  box-sizing: border-box;
+  width: 322px;
+}
+#airlineSearch {
+  border: 2px solid rgb(241, 10, 10);
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 25px 0;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 200ms ease-in-out;
+  box-sizing: border-box;
+  width: 220px;
+}
+#airlineID {
+  border: 2px solid rgb(241, 10, 10);
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 25px 0;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 200ms ease-in-out;
+  box-sizing: border-box;
+  width: 150px;
+}
+.detailsEntry {
+  background-color: rgba(82, 118, 238, 0.767);
+  font-size: 20px;
+  height: 420px;
+  width: 500px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+  box-shadow: 1px 1px 10px 1px #3feee6;
+}
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #95a5a6;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border: 1px solid #ecf0f1;
+  background: #ecf0f1;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+.airport-search {
+  background-color: #41b3a3;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  box-shadow: 2px 2px 15px;
+}
+.airline-search {
+  background-color: #e27d60;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  box-shadow: 2px 2px 15px;
+}
+.airline-ID {
+  background-color: #daad86;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  box-shadow: 2px 2px 15px;
+}
+.date {
+  background-color: #3feee6;
+  opacity: 0.9;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  box-shadow: 2px 2px 15px;
+}
+.airline-ID,
+.airport-search,
+.airline-search,
+.date {
+  text-align: center;
+}
