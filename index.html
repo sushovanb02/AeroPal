@@ -9,10 +9,12 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
     />
     <link rel="stylesheet" href="app.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <title>AeroPal</title>
   </head>
   <body>
-    <h2>ENTER YOUR DETAILS!</h2>
+    <div class="heading"><h2>ENTER YOUR DETAILS!</h2></div>
     <form action="">
       <div class="detailsEntry">
         <div class="airport-search">
@@ -45,8 +47,65 @@
             max="2030-12-31"
           />
         </div>
-    </div>
+      </div>
       <a href="#/" class="btn-search">Search Route</a>
     </form>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About Us</h2>
+          <div class="content">
+            <p>
+              AeroPal aims at providing well-routed maps with proper steps to
+              users based on his/her flight details and the airport. A
+              step-by-step guide when laid out in front of the user, sets a
+              clear goal in his/her mind and does not lead to unnecessary
+              wastage of time.
+            </p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Vishalnagar, Raipur</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+00-00000000</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">AeroPal@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact Us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required />
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <span class="textarea"><textarea rows="3" cols="25" required></textarea></span>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
