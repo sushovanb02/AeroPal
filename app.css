@@ -15,6 +15,7 @@ body {
   font-weight: 200;
   letter-spacing: 0.05rem;
   line-height: 1;
+  margin: 0;
 }
 h2 {
   font-size: 40px;
@@ -338,10 +339,10 @@ focus {
   color: white;
 }
 footer {
-  margin-left: 0px;
   bottom: 0px;
   width: 100%;
   background: #111;
+  display: ;
 }
 .main-content {
   display: flex;
@@ -445,6 +446,7 @@ footer {
 }
 .right form .btn {
   margin-top: 10px;
+  margin-right: -13px;
 }
 .right form .btn button {
   height: 40px;
@@ -458,7 +460,7 @@ footer {
   transition: 0.3s;
 }
 .right form .btn button:hover {
-  background: #000;
+  background: rgb(217, 136, 241);
 }
 .bottom center {
   padding: 5px;
@@ -475,7 +477,7 @@ footer {
 .bottom center a:hover {
   text-decoration: underline;
 }
-textarea{
+textarea {
   resize: none;
 }
 @media screen and (max-width: 900px) {
