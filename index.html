@@ -14,42 +14,84 @@
     <title>AeroPal</title>
   </head>
   <body>
-    <div class="heading"><h2>ENTER YOUR DETAILS!</h2></div>
-    <form action="">
-      <div class="detailsEntry">
-        <div class="airport-search">
-          <label for="airportSearch">Airport Search: </label>
-          <input
-            type="text"
-            id="airportSearch"
-            placeholder="Enter Airport ID, Name, City, State, and/or Country"
-          />
-        </div>
-        <div class="airline-search">
-          <label for="airlineSearch">Airline Search: </label>
-          <input
-            type="text"
-            id="airlineSearch"
-            placeholder="Enter Airline Company Name"
-          />
-        </div>
-        <div class="airline-ID">
-          <label for="airlineID">Airline ID: </label>
-          <input type="text" id="airlineID" placeholder="Enter Airline ID" />
-        </div>
-        <div class="date">
-          <label for="start">Date of Departure: </label>
-          <input
-            type="date"
-            id="start"
-            value="2021-08-09"
-            min="1997-01-01"
-            max="2030-12-31"
-          />
-        </div>
+    <!--------------------------------- CUSTOM NAVBAR ----------------------------------------------->
+    <header>
+      <div class="overlay"></div>
+      <div class="container">
+          <nav>
+              <h1 class="brand"><a href="index.html"><span>AERO</span>PAL</a></h1>
+              <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+              </ul>
+          </nav>
       </div>
-      <a href="#/" class="btn-search">Search Route</a>
-    </form>
+  </header>
+  <!--------------------------------- CUSTOM NAVBAR END ----------------------------------------------->
+  <!--------------------------------- FORM START ----------------------------------------------->
+  <div class="form">
+    <div class="title">Search Your Route</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Search Airport</span>
+            <input type="text" placeholder="Enter airport name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Search Airline</span>
+            <input type="text" placeholder="Enter airline name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Airline ID</span>
+            <input type="text" placeholder="Enter airline ID" required>
+          </div>
+          <div class="date">
+            <label for="start">Date of Departure: </label>
+            <input
+              type="date"
+              id="start"
+              value="2021-08-12"
+              min="2021-01-01"
+              max="2050-12-31"
+            />
+          </div>
+        </div>
+        <!-- <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+        <div class="button">
+          <input type="submit" value="Search">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--------------------------------- FORM END ----------------------------------------------->
+  
+  
     <footer>
       <div class="main-content">
         <div class="left box">
@@ -92,11 +134,11 @@
           <div class="content">
             <form action="#">
               <div class="email">
-                <div class="text">Email *</div>
+                <div class="text">Email</div>
                 <input type="email" required />
               </div>
               <div class="msg">
-                <div class="text">Message *</div>
+                <div class="text">Message</div>
                 <span class="textarea"><textarea rows="3" cols="25" required></textarea></span>
               </div>
               <div class="btn">
