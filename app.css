@@ -491,8 +491,8 @@ header {
   height: 100px;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
     url("") center no-repeat; */
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  /* background-color: #2a2a72; */
+  /* background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
   background-size: cover;
   position: fixed;
   top: 0;
@@ -507,7 +507,8 @@ header {
   margin: 0 auto;
   /* font-family: Arial; */
   text-transform: uppercase;
-  font-size: small;
+   font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-weight: 400;
 }
 
 .menu-toggle {
@@ -541,7 +542,7 @@ nav {
 }
 
 .brand span {
-  color: crimson;
+  color: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -619,13 +620,14 @@ nav ul li a:hover::after {
 /* HEADER END */
 /* FORM START */
 .form {
-  max-width: 700px;
-  width: 100%;
-  background-color: #fff;
-  padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  margin-top: 140px;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    margin-top: -190px;
+    position: absolute;
 }
 .form .title {
   font-size: 25px;
@@ -766,3 +768,59 @@ form .button input:hover {
     margin: 5px 0;
   }
 }
+
+
+/* background stripe START*/
+:root {
+  --background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+  --first: #53f;
+  --second: #4553ff;
+  --third: #4f40ff;
+  --fourth: #25ddf5;
+  --fifth: #1fa2ff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#stripes {
+  width: 100%;
+  height: 35vw;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  
+  transform: skewY(-12deg);
+  transform-origin: 0;
+}
+
+#stripes span:nth-child(1) {
+  grid-column: span 1;
+  background: var(--first);
+}
+
+#stripes span:nth-child(2) {
+  grid-column: span 2;
+  background: var(--second);
+}
+
+#stripes span:nth-child(3) {
+  grid-column: span 2;
+  background: var(--third);
+}
+
+#stripes span:nth-child(4) {
+  grid-column: 6;
+  grid-row: 3;
+  background: var(--fourth);
+}
+
+#stripes span:nth-child(5) {
+  grid-column: span 2;
+  grid-row: 4;
+  background: var(--fifth);
+} 
+/* background stripe END */
