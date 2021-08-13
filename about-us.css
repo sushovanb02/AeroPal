@@ -65,13 +65,13 @@ hr {
   font-family: "Bellota Text", cursive;
 }
 .container .card {
-  width: 330px;
-  height: 416px;
-  padding: 60px 30px;
-  margin: 20px;
-  background: #f2f3f7;
-  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
-  border-radius: 20px;
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: #f2f3f7;
+    box-shadow: 0.6em 0.6em 1.2em #a9b4e9, -0.5em -0.5em 1em #dadadb;
+    border-radius: 20px;
 }
 .container .card .content {
   display: flex;
