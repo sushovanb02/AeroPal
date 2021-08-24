@@ -12,7 +12,9 @@ if( isset($_GET['airport']) ){
     $airport = mysqli_real_escape_string($con, htmlspecialchars($_GET['airport']));
     $airline = mysqli_real_escape_string($con, htmlspecialchars($_GET['airline']));
     $date = mysqli_real_escape_string($con, htmlspecialchars($_GET['date']));
-    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND  airline= '$airline' AND dt= '$date' ";
+    $flight_id= mysqli_real_escape_string($con, htmlspecialchars($_GET['flight_id']));
+    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND  airline= '$airline' AND dt= '$date' AND 
+    flight_id='$flight_id'";
 }
 $result = $con->query($sql);
 ?>
@@ -68,19 +70,14 @@ $result = $con->query($sql);
             <input type="text" placeholder="Enter airport name" name="airport" required>
           </div>
           <div class="input-box">
-            <span class="details">Enter Flight ID</span>
-            <input type="text" placeholder="Enter flight ID" name="flight" required>
+            <span class="details">Enter Airline</span>
+            <input type="text" placeholder="Enter airline name" name="airline" required>
           </div>
           <div class="input-box">
-            <span class="details">Date of Departure:</span>
-            <input type="date"
-              id="start"
-              value="2021-08-12"
-              min="2021-01-01"
-              max="2050-12-31"
-              name= "date" required>
+            <span class="details">Enter Flight Id</span>
+            <input type="text" placeholder="Enter airline name" name="flight_id" required>
           </div>
-          <!-- <div class="date">
+          <div class="date">
             <label for="start">Date of Departure: </label>
             <input
               type="date"
@@ -90,7 +87,7 @@ $result = $con->query($sql);
               max="2050-12-31"
               name= "date"
             />
-          </div> -->
+          </div>
         </div>
         <div class="button">
           <input type="submit" value="Search">
