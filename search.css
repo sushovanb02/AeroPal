@@ -1,0 +1,26 @@
+body {
+  background-color: #2a2a72;
+  background-image: linear-gradient(to right, #518dc5 0%, #009ffd 74%);
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  border: 1.5px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1 {
+  color: #ffa500;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+h2 {
+  text-align: center;
+  color: darkgreen;
+  font-weight: 800;
+}
