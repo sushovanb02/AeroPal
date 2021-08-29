@@ -10,9 +10,10 @@ if( $con->connect_error){
 $sql = "SELECT * FROM airport_maps";
 if( isset($_GET['airport']) ){
     $airport = mysqli_real_escape_string($con, htmlspecialchars($_GET['airport']));
-    $airline = mysqli_real_escape_string($con, htmlspecialchars($_GET['airline']));
     $date = mysqli_real_escape_string($con, htmlspecialchars($_GET['date']));
-    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND  airline= '$airline' AND dt= '$date' ";
+    $flight_id= mysqli_real_escape_string($con, htmlspecialchars($_GET['flight_id']));
+    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND dt= '$date' AND 
+    flight_id='$flight_id'";
 }
 $result = $con->query($sql);
 ?>

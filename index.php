@@ -10,10 +10,9 @@ if( $con->connect_error){
 $sql = "SELECT * FROM airport_maps";
 if( isset($_GET['airport']) ){
     $airport = mysqli_real_escape_string($con, htmlspecialchars($_GET['airport']));
-    $airline = mysqli_real_escape_string($con, htmlspecialchars($_GET['airline']));
     $date = mysqli_real_escape_string($con, htmlspecialchars($_GET['date']));
     $flight_id= mysqli_real_escape_string($con, htmlspecialchars($_GET['flight_id']));
-    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND  airline= '$airline' AND dt= '$date' AND 
+    $sql = "SELECT * FROM airport_maps WHERE airport= '$airport' AND dt= '$date' AND 
     flight_id='$flight_id'";
 }
 $result = $con->query($sql);
@@ -68,10 +67,6 @@ $result = $con->query($sql);
           <div class="input-box">
             <span class="details">Enter Airport</span>
             <input type="text" placeholder="Enter airport name" name="airport" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Enter Airline</span>
-            <input type="text" placeholder="Enter airline name" name="airline" required>
           </div>
           <div class="input-box">
             <span class="details">Enter Flight Id</span>
